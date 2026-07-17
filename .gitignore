@@ -1,0 +1,17 @@
+# never commit credentials or tokens
+.credentials.json
+*credentials*.json
+*.token
+.env
+.env.*
+token.txt
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# os / editor
+.DS_Store
+*.swp
