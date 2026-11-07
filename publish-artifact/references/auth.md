@@ -1,5 +1,10 @@
 # Auth & portability — getting a token in any harness
 
+> **`artifact.py` (the full CLI) reads the token only from `$CLAUDE_CODE_OAUTH_TOKEN`.**
+> It has no `--token` flag and never reads or refreshes the credentials file or
+> Keychain. Everything below about `--token`, `~/.claude/.credentials.json` and refresh
+> applies to the older `publish_artifact.py` only.
+
 This skill is **stateless**: it stores nothing and needs no local Claude Code
 install or login *as long as you hand it an OAuth token*. That token is the only
 piece of state, and you supply it however your environment prefers. Everything the
